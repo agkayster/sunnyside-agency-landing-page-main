@@ -25,8 +25,8 @@
 			<div class="creatives-image">
 				<nav class="navbar" aria-label="main navigation">
 					<div class="navbar-brand">
-						<a class="navbar-item" href="https://bulma.io"
-							><span>sunnyside</span>
+						<a class="navbar-item" href="/"
+							><span class="navbar-logo">sunnyside</span>
 						</a>
 
 						<a
@@ -34,18 +34,19 @@
 							class="navbar-burger"
 							aria-label="menu"
 							aria-expanded="false"
+							data-target="navMenu"
 						>
-							<span aria-hidden="true"></span>
-							<span aria-hidden="true"></span>
-							<span aria-hidden="true"></span>
+							<span class="toggle-bar" aria-hidden="true"></span>
+							<span class="toggle-bar" aria-hidden="true"></span>
+							<span class="toggle-bar" aria-hidden="true"></span>
 						</a>
 					</div>
-					<div class="navbar-menu">
+					<div class="navbar-menu" id="navMenu">
 						<div class="navbar-end">
-							<a class="navbar-item"> About </a>
-							<a class="navbar-item"> Services </a>
-							<a class="navbar-item"> Projects </a>
-							<a class="navbar-item"> Contact </a>
+							<a class="navbar-item about"> About </a>
+							<a class="navbar-item services"> Services </a>
+							<a class="navbar-item project"> Projects </a>
+							<a class="navbar-item contact"> Contact </a>
 						</div>
 					</div>
 				</nav>

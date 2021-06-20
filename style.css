@@ -2,6 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
 
+* {
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+}
+
 .navbar {
 	background-image: url(./images/mobile/image-header_1.jpg);
 }
@@ -42,7 +50,7 @@ a.navbar-item:hover {
 	color: white;
 }
 
-.navbar-item span {
+.navbar-logo {
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-weight: 900;
 }
@@ -392,6 +400,23 @@ img.facebook-logo,
 }
 
 @media only screen and (min-width: 1440px) {
+	* {
+		box-sizing: border-box;
+	}
+
+	body {
+		height: 100vh;
+	}
+
+	.attribution {
+		font-size: 11px;
+		text-align: center;
+		margin-top: 80px;
+	}
+	.attribution a {
+		color: hsl(228, 45%, 44%);
+	}
+
 	.navbar {
 		background-image: url(./images/mobile/image-header_1.jpg);
 	}
@@ -417,7 +442,7 @@ img.facebook-logo,
 	}
 
 	.navbar-end {
-		margin-right: 50px;
+		margin-right: 30px;
 	}
 
 	.creatives-image {
@@ -434,9 +459,19 @@ img.facebook-logo,
 		color: white;
 	}
 
-	.navbar-item span {
+	.navbar-logo {
 		font-family: Georgia, 'Times New Roman', Times, serif;
 		font-weight: 900;
+	}
+
+	.navbar {
+		padding-left: 1.4rem;
+		padding-right: 1.4rem;
+		padding-top: 0.7rem;
+	}
+
+	.navbar-item.services {
+		margin-right: 0px;
 	}
 
 	h1 {
@@ -732,6 +767,14 @@ img.facebook-logo,
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
+	* {
+		box-sizing: border-box;
+	}
+
+	body {
+		height: 100vh;
+	}
+
 	.attribution {
 		font-size: 11px;
 		text-align: center;
@@ -749,12 +792,84 @@ img.facebook-logo,
 		background-position: center;
 	}
 
-	.navbar-brand a {
+	.navbar-logo {
+		font-family: Georgia, 'Times New Roman', Times, serif;
+		transition: color 0.2s ease-in-out;
+		display: flex;
+		font-weight: 900;
 		color: white;
 	}
 
-	.navbar-item span {
-		font-family: Georgia, 'Times New Roman', Times, serif;
+	.navbar-logo:hover {
+		color: red;
+	}
+
+	a.navbar-burger {
+		cursor: pointer;
+		background-color: transparent;
+		width: 40px;
+		height: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		color: red;
+		transition: background-color 0.2s ease-in-out,
+			transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+	}
+
+	span.toggle-bar {
+		display: block;
+		width: 25px;
+		height: 4px;
+	}
+
+	.navbar-end a {
+		color: grey;
+		text-decoration: none;
+		display: flex;
+		flex-direction: column;
+		font-weight: 400;
+		visibility: visible;
+		background-color: transparent;
+		align-items: center;
+	}
+
+	.navbar-end a:hover {
+		background-color: yellow;
+		border-radius: 80px;
+		font-family: 'Fraunces', serif;
+	}
+
+	.navbar {
+		max-width: 1000px;
+		padding-left: 1.4rem;
+		padding-right: 1.4rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.navbar-item.services {
+		margin-right: 0px;
+	}
+
+	/* .navbar-menu {
+		visibility: visible;
+		position: fixed;
+		border-radius: 5px;
+		background-color: transparent;
+	} */
+
+	.navbar-menu.is-active {
+		visibility: visible;
+		position: fixed;
+		border-radius: 0px;
+		background-color: white;
+		height: 48%;
+		width: 85%;
+		margin-top: 30px;
+		padding: 50px;
+		margin-left: 5px;
 	}
 
 	h1 {

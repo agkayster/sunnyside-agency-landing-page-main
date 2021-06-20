@@ -21,3 +21,25 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	}
 });
+
+// const navbar = document.getElementById('navbar');
+
+// const navbarBurger = navbar.querySelector('.navbar-burger');
+
+// function openMobileNavbar() {
+// 	navbar.classList.add('opened');
+// 	navbarBurger.setAttribute('aria-label', 'close navigation menu');
+// }
+
+// function closeMobileNavbar() {
+// 	navbar.classList.remove('opened');
+// 	navbarBurger.setAttribute('aria-label', 'open navigation menu');
+// }
+
+// navbarBurger.addEventListener('click', () => {
+// 	if (navbar.classList.contains('opened')) {
+// 		closeMobileNavbar();
+// 	} else {
+// 		openMobileNavbar();
+// 	}
+// });
