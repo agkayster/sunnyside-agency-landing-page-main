@@ -839,6 +839,7 @@ img.facebook-logo,
 		background-color: yellow;
 		border-radius: 80px;
 		font-family: 'Fraunces', serif;
+		
 	}
 
 	.navbar {
@@ -851,6 +852,18 @@ img.facebook-logo,
 
 	.navbar-item.services {
 		margin-right: 0px;
+		margin-bottom: 10px;
+	}
+
+	.navbar-item.about {
+		margin-bottom: 10px;
+	}
+
+	.navbar-item.projects {
+		margin-bottom: 10px;
+	}
+	.navbar-item.contact {
+		margin-top: 20px;
 	}
 
 	/* .navbar-menu {
@@ -868,7 +881,7 @@ img.facebook-logo,
 		height: 48%;
 		width: 85%;
 		margin-top: 30px;
-		padding: 50px;
+		padding: 40px;
 		margin-left: 5px;
 	}
 
